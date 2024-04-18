@@ -1,8 +1,8 @@
 /**
-    @module phront/data/main.mod/model/aws/secret
+    @module app-infrastructure-data-mod/data/main.mod/model/aws/secret
 */
 
-var DataObject = require("../data-object").DataObject;
+var DataObject = require("montage/data/model/data-object").DataObject;
 
 /**
  * @class Secret
