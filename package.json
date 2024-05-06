@@ -17,7 +17,7 @@
     "url": "PhrontHQ/app-infrastructure-data.mod"
   },
   "dependencies": {
-    "mod": "github:PhrontHQ/mod#mod"
+    "mod": "github:PhrontHQ/mod#main"
   },
   "devDependencies": {
   },
