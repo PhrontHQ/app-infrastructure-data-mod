@@ -16,11 +16,8 @@
                 {"@": "lastName"},
                 {"@": "email"},
                 {"@": "phone"},
-                {"@": "images"},
-                {"@": "addresses"},
                 {"@": "tags"},
                 {"@": "mfaCode"},
-                {"@": "person"},
                 {"@": "locale"},
                 {"@": "timeZone"}
             ],
@@ -130,29 +127,6 @@
             "valueType": "string"
         }
     },
-    "images": {
-        "prototype": "mod/core/meta/property-descriptor",
-        "values": {
-            "name": "images",
-            "cardinality": -1,
-            "valueDescriptor": {"@": "image_descriptor"}
-        }
-    },
-    "image_descriptor": {
-        "object": "../image.mjson"
-    },
-    "addresses": {
-        "prototype": "mod/core/meta/property-descriptor",
-        "values": {
-            "name": "addresses",
-            "valueType": "object",
-            "cardinality": -1,
-            "valueDescriptor": {"@": "addresses_descriptor"}
-       }
-    },
-    "addresses_descriptor": {
-        "object": "../messaging-channel/postal-address.mjson"
-    },
     "tags": {
         "prototype": "mod/core/meta/property-descriptor",
         "values": {
@@ -167,19 +141,6 @@
             "name": "mfaCode",
             "valueType": "string"
        }
-    },
-    "person": {
-        "prototype": "mod/core/meta/property-descriptor",
-        "values": {
-            "name": "person",
-            "valueType": "object",
-            "cardinality": 1,
-            "valueDescriptor": {"@": "personDescriptor"},
-            "inversePropertyName": "userIdentities"
-       }
-    },
-    "personDescriptor": {
-        "object": "../person.mjson"
     },
     "locale": {
         "prototype": "mod/core/meta/property-descriptor",
