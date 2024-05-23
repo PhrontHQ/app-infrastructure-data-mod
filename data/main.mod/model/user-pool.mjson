@@ -54,20 +54,6 @@
     },
     "CognitoUserPoolDescriptor": {
         "object": "aws.mod/data/main.mod/model/cognito/user-pool.mjson"
-    },
-    "servedOrganizations": {
-        "prototype": "mod/core/meta/property-descriptor",
-        "values": {
-            "name": "servedOrganizations",
-            "cardinality": -1,
-            "valueType": "object",
-            "valueDescriptor": {"@": "OrganizationDescriptor"},
-            "inversePropertyName": "userPools",
-            "description": "The parties using a UserPool"
-       }
-    },
-    "OrganizationDescriptor": {
-        "object": "../organization.mjson"
     }
 
 }

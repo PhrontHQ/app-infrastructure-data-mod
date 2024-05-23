@@ -4,8 +4,7 @@
         "values": {
             "name": "Application",
             "propertyDescriptors": [
-                {"@": "appClients"},
-                {"@": "controllingOrganization"}
+                {"@": "appClients"}
             ]
         }
     },
@@ -21,20 +20,6 @@
     },
     "AppClientDescriptor": {
         "object": "./app-client.mjson"
-    },
-    "controllingOrganization": {
-        "prototype": "mod/core/meta/property-descriptor",
-        "values": {
-            "name": "controllingOrganization",
-            "cardinality": 1,
-            "valueType": "object",
-            "valueDescriptor": {"@": "OrganizationDescriptor"},
-            "inversePropertyName": "applications",
-            "description": "The party owning the application. Important for security, analytics, etc... Could be a Person, an organization, any Party subclass"
-       }
-    },
-    "OrganizationDescriptor": {
-        "object": "../organization.mjson"
     }
 
 }
