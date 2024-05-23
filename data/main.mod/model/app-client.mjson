@@ -8,7 +8,7 @@
                 {"@": "applicationProperty"},
                 {"@": "identifier"},
                 {"@": "credentials"},
-                {"@": "userPool"},
+                {"@": "userPool"}
             ],
             "objectDescriptorModule": {
                 "%": "./app-client.mjson"
