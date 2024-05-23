@@ -9,7 +9,6 @@
                 {"@": "identifier"},
                 {"@": "credentials"},
                 {"@": "userPool"},
-                {"@": "cognitoUserPoolClient"}
             ],
             "objectDescriptorModule": {
                 "%": "./app-client.mjson"
@@ -73,18 +72,6 @@
     },
     "UserPoolDescriptor": {
         "object": "./user-pool.mjson"
-    },
-    "cognitoUserPoolClient": {
-        "prototype": "mod/core/meta/property-descriptor",
-        "values": {
-            "name": "cognitoUserPoolClient",
-            "cardinality": 1,
-            "valueType": "object",
-            "valueDescriptor": {"@": "CognitoUserPoolClientDescriptor"}
-       }
-    },
-    "CognitoUserPoolClientDescriptor": {
-        "object": "aws.mod/data/main.mod/model/cognito/user-pool-client.mjson"
     }
 
 }
