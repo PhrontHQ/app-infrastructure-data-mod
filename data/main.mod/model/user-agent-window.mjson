@@ -72,7 +72,7 @@
        }
     },
     "LogEntryDescriptor": {
-        "object": "../log-entry.mjson"
+        "object": "./log-entry.mjson"
     }
 
 }
